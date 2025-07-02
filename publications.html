@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Publications – Adam Wyatt</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav id="navbar"></nav>
+
+  <script>
+    fetch("navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+  <header>
+    <h1>Publications</h1>
+    <p>Selected peer-reviewed articles and conference presentations. For a full list, see my <a href="adam-wyatt-publications.pdf" target="_blank">publication record (PDF)</a> or visit my <a href="https://scholar.google.com/citations?user=_6wUq0oAAAAJ&hl=en" target="_blank">Google Scholar profile</a>.</p>
+  </header>
+
+  <section>
+    <h2>Recent Highlights</h2>
+    <ul>
+      <li><strong>Wyatt, A. S.</strong> et al. “Attosecond emission delay from atoms and molecules using multi-dimensional XUV interferometry.” <em>New Journal of Physics</em>, 2024.</li>
+      <li><strong>Wyatt, A. S.</strong> et al. “Quantitative analysis of aligned-molecule photoelectron angular distributions.” <em>Physical Review A</em>, 2025.</li>
+      <li><strong>Wyatt, A. S.</strong> et al. “Exploring the charge density wave phase of 1T-TaSe₂.” <em>Physical Review Letters</em>, 2023.</li>
+      <li><strong>Wyatt, A. S.</strong> et al. “Attosecond sampling of arbitrary optical waveforms.” <em>Optica</em>, 2016.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Conference Contributions</h2>
+    <ul>
+      <li>“Direct Measurement of Attosecond Emission Delays in High Harmonic Generation.” <em>Ultrafast Optics</em>, 2023.</li>
+      <li>“Compression and Amplification of SWIR Pulses for Water Window Attosecond Pulse Generation.” <em>Photon 16</em>, 2016.</li>
+      <li>“Attosecond Sampling of Arbitrary Optical Waveforms.” <em>Frontiers in Optics</em>, 2017 (Invited).</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p><a href="index.html">← Back to Home</a></p>
+  </footer>
+</body>
+</html>
