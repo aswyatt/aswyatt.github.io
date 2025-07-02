@@ -7,15 +7,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav>
-    <ul class="navbar">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="sketches.html">Sketches</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="mailto:your.email@example.com">Contact</a></li>
-    </ul>
-  </nav>  
+  <nav id="navbar"></nav> 
   <header>
     <h1>Adam Wyatt</h1>
     <p>Scientific Software Developer · Specializing in Optical Pulse Simulations, Interactive Visualizations, and GUI Design</p>
@@ -39,5 +31,14 @@
   <footer>
     <p>Contact: <a href="mailto:your.email@example.com">your.email@example.com</a> · <a href="https://github.com/aswyatt">GitHub</a></p>
   </footer>
+  
+  <script>
+    fetch("navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+  
 </body>
 </html>
