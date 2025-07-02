@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About – Adam Wyatt</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav id="navbar"></nav>
+
+  <script>
+    fetch("navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+  <header>
+    <h1>About Me</h1>
+  </header>
+
+  <section>
+    <p>I'm a scientific software developer with a focus on high-performance simulations, interactive visualizations, and robust, reproducible workflows. My work specializes in numerical modeling of ultrashort optical pulses — integrating advanced FFT-based techniques, GPU acceleration, and precision algorithm design.</p>
+
+    <p>I bring a pragmatic approach to development: modular Python architectures, rigorous unit testing, and Docker-based pipelines to ensure consistent performance across environments. I'm equally comfortable optimizing a spectral axis for physical fidelity as I am designing intuitive PySide6 GUIs for usability and insight.</p>
+
+    <p>Beyond core simulations, I value clean interfaces and exploratory tools — whether that's a real-time sketch written in P5.js or an elegant frontend for scientific analysis.</p>
+  </section>
+
+  <section>
+    <h2>Freelance Availability</h2>
+    <p>I'm currently open to freelance work, particularly in the fields of:</p>
+    <ul>
+      <li>Scientific/numerical computing</li>
+      <li>Custom simulation frameworks (Python/C++)</li>
+      <li>Visualization and interface design</li>
+      <li>Workflow automation (Docker, CI, deployment)</li>
+    </ul>
+    <p>If you’re looking to bring precision, performance, and clarity to your project, <a href="mailto:aswoptics@gmail.com">get in touch</a>.</p>
+  </section>
+
+  <section>
+    <h2>Download CV</h2>
+    <p>You can download my full CV as a PDF: 
+      <a href="adam-wyatt-cv.pdf" download>Adam Wyatt CV (PDF)</a>
+    </p>
+  </section>
+
+  <footer>
+    <p><a href="index.html">← Back to Home</a></p>
+  </footer>
+</body>
+</html>
