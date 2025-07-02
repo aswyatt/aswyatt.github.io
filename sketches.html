@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <nav id="navbar"></nav>
   <header>
     <h1>P5.js Sketches</h1>
     <p>Exploring evolutionary algorithms and visual simulation, inspired by <a href="https://natureofcode.com/" target="_blank">The Nature of Code</a> by Daniel Shiffman (Chapter 9).</p>
@@ -28,5 +29,14 @@
     <p>All sketches © Adam Wyatt. Inspired by <a href="https://natureofcode.com/" target="_blank">The Nature of Code</a> by Daniel Shiffman.</p>
     <p><a href="index.html">← Back to Home</a></p>
   </footer>
+
+  <script>
+    fetch("navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+    
 </body>
 </html>
