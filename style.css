@@ -22,3 +22,33 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+nav {
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #0366d6;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
